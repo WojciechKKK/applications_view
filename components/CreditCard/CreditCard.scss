@@ -1,0 +1,70 @@
+$fontColor: rgb(255,255,255);
+$additionalColor: rgba(255, 255, 255, 0.472);
+
+@mixin viewInfo{
+    color: $fontColor;
+    font-size: 1.5rem
+}
+.creditCardComp{
+    border-radius: 30px;
+    width: 30%;
+    height: 250px;
+    display: inline-block;
+    margin: 50px 20px;
+    @media(max-width: 1000px){
+        width: 100%;
+        margin: 50px 0;    
+    }
+    .creditContainer{
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 2fr 1fr; 
+    }
+    .creditCompany{
+        @include viewInfo;
+        margin-top: 10%;
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: italic;
+        margin-right: -20px;
+    }
+    .creditNumber{
+        @include viewInfo;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .creditNumberEl{
+            display: inline-block;
+        }
+    }
+    .creditInfo{
+        @include viewInfo;
+        .creditName{
+            display: inline-block;
+            text-align: left;
+            width: 50%
+        }
+        .creditValid{
+            display: inline-block;
+            text-align: right;
+            width: 50%;
+            .creditTextValid{
+                text-transform: uppercase;
+                font-size: 0.5rem;
+                display: inline-block;
+                margin: 0 5px;
+                line-height: 100%;
+                color: $additionalColor
+            }
+            .creditDateValid{
+                display: inline-block;
+            }
+        }
+    }
+}
+

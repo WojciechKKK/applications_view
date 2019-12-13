@@ -1,0 +1,70 @@
+$fontStyle: Arial, Helvetica, sans-serif;
+$fontColor: rgb(255,255,255);
+
+.travelComp{
+    font-family: $fontStyle;
+    width: 30%;
+    height: 400px;
+    display: inline-block;
+    margin: 50px 10px;
+    border-radius: 30px;
+    color: $fontColor;
+    position: relative;
+    @media(max-width: 1000px){
+        width: 100%;
+        margin: 50px 0;
+    }
+    .travelContainer{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        .travelTitle{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            padding: 40px 0;
+            font-weight: 700;
+        }
+        .travelInfo{
+            position: absolute;
+            bottom: 18%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 90%;
+            text-align: left;
+            @media(max-width: 100px){
+                position: absolute;
+                bottom: 25%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 90%;
+                text-align: left;
+            }
+            .travelText{
+                display: inline-block;
+                width: 80%;
+                text-align: left;
+                font-size: 1.4rem;
+                font-weight: 500;
+                float: left;
+            }
+            .travelCircle{
+                display: inline-block;
+                width: 10%;
+                .travelCircleCenter, .travelCircleEl{
+                    padding: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    color: $fontColor;
+                    display: grid; 
+                    justify-content: center; 
+                    align-content: center; 
+                    width: 45px;
+                    height: 45px;
+                    border: 2px solid $fontColor;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

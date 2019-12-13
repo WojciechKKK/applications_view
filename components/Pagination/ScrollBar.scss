@@ -1,0 +1,23 @@
+@import './AllColors.scss';
+
+.scrollBarComp{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto;
+    color: $numberColor;
+    .scrollBarContainer{
+        width: 100%;
+        padding: 30px 0;
+        background: white;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        border-radius: 30px;
+    }
+    .pageComp{
+        display: inline-block;
+        text-align: center;
+    }
+}

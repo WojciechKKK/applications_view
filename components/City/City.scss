@@ -1,0 +1,49 @@
+$colorCity: rgb(255,255,255);
+$btnBackground: rgb(0,0,0);
+$btnColor: rgb(255,255,255);
+$widthInsideElement: 80%;
+$cityFont: 25px;
+$fontWeight: 700;
+$borderRadius: 30px;
+
+.cityComp{
+    width: 25%;
+    display: inline-block;
+    height: 350px;
+    margin: 50px 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: $borderRadius;
+    text-align: center;
+    position: relative;
+    @media(max-width: 1000px){
+            width: 100%;
+            margin: 50px 0;    
+    }
+    .cityName{
+        color: $colorCity;
+        text-align: right;
+        width: $widthInsideElement;
+        padding-top: 35px;
+        font-size: $cityFont;
+        font-weight: $fontWeight;
+        margin: 0 auto
+    }
+    .btnDownload{
+        position: absolute;
+        bottom: 0%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: $btnColor;
+        background: $btnBackground;
+        width: $widthInsideElement;
+        border: 1px solid $btnBackground;
+        font-size: $cityFont - 10;
+        padding: 15px 0;
+        border-radius: $borderRadius;
+        font-weight: $fontWeight;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}
+

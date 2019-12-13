@@ -1,0 +1,60 @@
+$paramColor: rgb(69,100,149);
+$elementColor: rgb(255,255,255);
+$fontSize: 2vw;
+$fontFamily:  Arial, Helvetica, sans-serif;
+$bigSizeCircle: 12vw;
+
+@mixin toDoElement{
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: $elementColor;
+    font-size: $fontSize - 0.3;
+    font-weight: 700;
+    position: relative;
+}
+
+.thingsToDo{
+    width: 30%;
+    background: $elementColor;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-family: $fontFamily;
+    padding: 20px 0;
+    .toDoTitle{
+        text-transform: uppercase;
+        font-size: $fontSize;
+        color: $paramColor;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+    .thingsToDoElements{
+        .smallSize{
+            @include toDoElement;
+            width: $bigSizeCircle - 5;
+            height: $bigSizeCircle - 5;
+        }
+        .mediumSize{
+            @include toDoElement;
+            width: $bigSizeCircle - 3;
+            height: $bigSizeCircle - 3;
+        }
+        .bigSize{
+            @include toDoElement;
+            width: $bigSizeCircle;
+            height: $bigSizeCircle;
+        }
+        .toDoElText{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            .fa-coffee, .fa-shopping-cart, .fa-music{
+                margin-bottom: 5px;
+                font-size: $fontSize *2;
+            }
+        }
+    }
+}

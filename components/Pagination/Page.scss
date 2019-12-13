@@ -1,0 +1,20 @@
+@import './AllColors.scss';
+
+//for number page view
+@mixin elementPage{
+    display: inline-block;
+    margin: 0 -3px;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.page{
+    @include elementPage;
+   background: transparent;
+   color: $fontColor;
+}
+.activeElement{
+    @include elementPage;
+    background: $activeBackground;
+    color: $fontColorActive
+}

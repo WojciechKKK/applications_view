@@ -1,0 +1,43 @@
+@import './AllSettings.scss';
+
+$heightEl: 70px;
+$radiusEl: 30px;
+
+.fileElementComp{
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+    height: $heightEl;
+    display: flex;
+    justify-content: space-between;
+    .fileElementImg{
+        display: inline-block;
+        height: $heightEl;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 10%;
+    }
+    .fileElementText{
+        text-align: left;
+        font-size: $fontSize - 5;
+        margin: 10px 0;
+        color: rgb(79,109,155)
+    }
+    .fileElementInfo{
+        width: 80%;
+    }
+    .fileElementProgress{
+        background: rgb(218,240,253);
+        border-radius: $radiusEl;
+        height: 20px;
+        .fileProgessProcent{
+            background: $colorActive;
+            height: 100%;
+            border-radius:$radiusEl;
+        }
+    }
+    .fileElementDone{
+        width: 10%
+    }
+}

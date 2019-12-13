@@ -1,0 +1,41 @@
+@import './AllSettings.scss';
+
+.filesUploadComp{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px auto;
+    width: 100%;
+    background: rgb(255,255,255);
+    border-radius: $borderEl;
+    padding: 30px 0;
+    .filesUploadContainer{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        .filesUploadText{
+            color: rgb(51,85,139);
+            letter-spacing: 2px;
+            font-size: $fontSize;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .filesUploadButton{
+            padding: 30px;
+            font-size: $fontSize;
+            background: $colorActive;
+            color: rgb(255,255,255);
+            border: 1px solid $colorActive;
+            border-radius: $borderEl;
+            font-weight: 700;
+            width: 100%;
+            text-transform: uppercase;
+            &:hover{
+                cursor: pointer;
+                color: $colorActive;
+                background: rgb(255,255,255);
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,24 @@
+{
+    "elements": [
+        {
+            "text": "Meeting with the team!",
+            "time": "9:00 AM",
+            "color": "rgb(161,124,255)"
+        },
+        {
+            "text": "Call dad, it is important!!!!",
+            "time": "10:00 AM",
+            "color": "rgb(151,207,240)"
+        },
+        {
+            "text": "You go, buy some food for Pepper. Pedigreeeeee!",
+            "time": "8:00 AM",
+            "color": "rgb(255,167,103)"
+        },
+        {
+            "text": "Stay focus!!",
+            "time": "All-day",
+            "color": "rgb(255,123,185)"
+        }
+    ]
+}

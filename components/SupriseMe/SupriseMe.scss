@@ -1,0 +1,64 @@
+
+$fontFamily:  Arial, Helvetica, sans-serif;
+$fontSize: 2vw;
+$titleColor: rgb(51,85,139);
+$elementColor: rgb(255,255,255);
+$widthElement: 20vw;
+$heightElement: 20vw;
+
+.supriseMeComp{
+    width: 100%;
+    background: $elementColor;
+    display: inline-block;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 30px;
+    .supriseMeContainer{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-family: $fontFamily;
+        .supriseMeTitle{
+            color: $titleColor;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 30px 0; 
+            text-align: left;
+        }
+        .supriseMeElements{
+            color: $elementColor;
+            display: grid; 
+            grid-auto-flow: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            .supriseItem{
+                border-radius: 30px;
+                text-transform: capitalize;
+                display: inline-block;
+                position: relative;
+                .supriseInside{
+                    position: absolute;
+                    bottom: 10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    margin: 0 auto;
+                    font-size: $fontSize;
+                    .fa-campground, .fa-hamburger, .fa-hiking{
+                        display: block;
+                        transform: scale(2.5);
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .small{
+                width: $widthElement - 5;
+                height: $heightElement - 3 
+            }
+            .big{
+                width: $widthElement;
+                height: $heightElement 
+            }
+        }
+    }   
+}
