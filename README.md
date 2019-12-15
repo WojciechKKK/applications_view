@@ -1,5 +1,3 @@
-## applications_view
-https://www.wojciechkkk.pl/applications_view
 ## Przykładowy widok aplikacji
 #### Technologie
 * React
